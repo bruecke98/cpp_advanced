@@ -1,9 +1,10 @@
 #include "numerik.hpp"
 #include <cstddef>
+#include <iostream>
 
-template <typename T>
 
-double newton( fx, fderiv, double x0, size_t n) {
+double newton(std::function<double(double)> fx ,std::function<double(float)>  fderiv, double x0, size_t n) {
     // TODO
+    std::cout << "huso" << std::endl;
     return 2.0;
 }

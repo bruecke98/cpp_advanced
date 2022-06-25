@@ -3,10 +3,10 @@
 #include <functional>
 #include <cmath>
 
-double newton( fx,  fderiv, double x0, size_t n);
+double newton(std::function<double(double)> fx  ,std::function<double(float)> fderiv, double x0, size_t n);
 
 template <typename T>
-T newtonTemp(double fx, float fderiv, T x0, size_t n) {
+T newtonTemp(T fx, T fderiv, T x0, size_t n) {
     // TODO
 }
 
