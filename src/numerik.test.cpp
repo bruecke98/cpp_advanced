@@ -12,5 +12,5 @@ TEST_CASE("numerik") {
     REQUIRE(fderivTemp<int>(2) == 21);
 
     REQUIRE(newton(fxTemp<double>, fderivTemp<float>, -5, 10) + 5.6240 < 0.0001);
-    //REQUIRE(newtonTemp<double>(fxTemp<double>, fderivTemp<double>, -5, 10) + 5.6240 < 0.0001);
+    REQUIRE(newtonTemp<double>(fxTemp<double>, fderivTemp<double>, -5, 10) + 5.6240 < 0.0001);
 }
